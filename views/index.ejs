@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Index</title>
+    <link href="/assets/css/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+<div class="box">
+    <div class="header">
+        <div class="logo-container" onclick="home()">
+            <img class="logo-item" height="60px" src="/assets/images/logo.png">
+            <label class="logo-item">The Weather</label>
+        </div>
+
+    </div>
+    <div class="content-container">
+   
+        <div id="bg"></div>
+
+        <div id="loading"><label>Loading...</label></div>
+
+        <div id="error">An Error Occured.<br>Please Try Again</div>
+
+        <div id="content-weather">
+          <div id="weather-today">
+            Current Weather Info
+          </div>
+
+          <div id="weather-forecast">
+            Weather forecast
+          </div>
+        </div>
+
+      <div id="content-text">
+        <h1>Start by searching for any location to view the weather !</h1>
+      </div>
+    </div>
+</div>
+    <div class="searchBox">
+        <input class="searchInput" type="text" name="" placeholder="Search" />
+        <button class="searchButton" onclick="getWeather()" onkeydown="onEnterPressed(this)">
+          <img class="search-icon" src="/assets/images/search.png"> </img>
+        </button>
+      </div>
+   
+    <footer></footer>
+
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+  </body>
+</html>

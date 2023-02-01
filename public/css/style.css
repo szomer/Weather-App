@@ -1,0 +1,261 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.searchBox {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: linear-gradient(to right, rgb(122, 67, 205), rgb(69, 144, 214));
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color: #2f3640;
+}
+
+.searchButton {
+  color: rgb(0, 0, 0);
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff83;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 90%;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+  .searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+  }
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.header {
+  flex: 0 1 auto;
+  background-color: #212121;
+  height: 120px;
+  width: 100%;
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  cursor: pointer;
+}
+
+.logo-item {
+  align-self: center;
+  padding: 10px;
+  background: linear-gradient(to right, rgb(122, 67, 205), rgb(69, 144, 214));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#content-text {
+  /* make a text color gradient */
+  font-size: 1.2rem;
+  color: white;
+
+  position: absolute;
+
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loading,
+#error {
+  visibility: hidden;
+
+  background-color: rgba(0, 0, 0, 0.556);
+  width: 35%;
+  height: 35%;
+  border-radius: 10px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content-weather {
+  /* make a text color gradient */
+
+  visibility: hidden;
+
+  font-size: 1.2rem;
+  color: white;
+  position: absolute;
+
+  width: 100%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#weather-forecast {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#weather-forecast div {
+  padding: 15px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.388);
+  border-radius: 5px;
+  border: 3px solid white;
+  min-width: 280px;
+  min-height: 280px;
+  width: fit-content;
+  flex-basis: 10px;
+}
+
+.content-container {
+  flex: 1 1 auto;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+  flex: 0 1 40px;
+}
+
+#weather-today {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-shadow: 1px 4px 5px black;
+}
+
+#weather-today div {
+  padding: 10px;
+  margin: 1% 2%;
+}
+
+#temp-today-day {
+  font-size: 6rem;
+  float: left;
+  text-align: left;
+  min-width: 300px;
+}
+
+#temp-today-night {
+  font-size: 5rem;
+  float: left;
+  text-align: left;
+}
+
+#city-name {
+  font-size: 5rem;
+  float: right;
+}
+#today-weekday {
+  font-size: 3rem;
+  float: right;
+}
+
+.temp-day {
+  font-size: 4rem;
+}
+.temp-night {
+  font-size: 3rem;
+}
+.temp-detail {
+  font-size: 2.5rem;
+}
+.temp-weekday {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+#weather-current {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+#weather-current div {
+  min-width: 200px;
+}
+
+#today-detail {
+  float: right;
+  font-size: 2rem;
+  float: left;
+  text-align: left;
+  border-left: solid 3px white;
+  padding-left: 20px;
+}
+
+#bg {
+  height: 100%;
+  background-image: url("/assets/images/bg.jpg");
+  opacity: 0.6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  box-shadow: inset 0 0 100px black;
+}
