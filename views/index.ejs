@@ -9,8 +9,8 @@
 <div class="box">
     <div class="header">
         <div class="logo-container" onclick="home()">
-            <img class="logo-item" height="60px" src="/assets/images/logo.png">
-            <label class="logo-item">The Weather</label>
+            <img class="logo-item" height="55px" src="/assets/images/logo.png">
+            <label class="logo-item" >The Weather</label>
         </div>
 
     </div>
@@ -33,12 +33,14 @@
         </div>
 
       <div id="content-text">
-        <h1>Start by searching for any location to view the weather !</h1>
+        <label id="text-upper">View the weather of any location.</label><br><br>
+      <label id="text-lower">Enter a city, country, or zip code.<br>
+      Start by searching!</label>
       </div>
     </div>
 </div>
     <div class="searchBox">
-        <input class="searchInput" type="text" name="" placeholder="Search" />
+        <input class="searchInput" type="text" name="" placeholder="City, Country, or Zipcode" />
         <button class="searchButton" onclick="getWeather()" onkeydown="onEnterPressed(this)">
           <img class="search-icon" src="/assets/images/search.png"> </img>
         </button>

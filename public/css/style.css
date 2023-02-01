@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
 html,
 body {
   padding: 0px;
@@ -11,10 +16,10 @@ body {
   top: 0%;
   left: 50%;
   transform: translate(-50%, 50%);
-  background: linear-gradient(to right, rgb(122, 67, 205), rgb(69, 144, 214));
+  background: linear-gradient(to right, rgb(58, 58, 58), rgb(100, 100, 100));
   height: 40px;
   border-radius: 40px;
-  padding: 10px;
+  padding: 7px;
 }
 
 .searchBox:hover > .searchInput {
@@ -23,8 +28,8 @@ body {
 }
 
 .searchBox:hover > .searchButton {
-  background: white;
-  color: #2f3640;
+  background: linear-gradient(to right, rgb(91, 162, 228), rgb(153, 102, 231));
+  color: #7c7c7c;
 }
 
 .searchButton {
@@ -33,7 +38,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #ffffff83;
+  background: #b9b9b9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +61,8 @@ body {
   transition: 0.4s;
   line-height: 40px;
   width: 0px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 620px) {
@@ -74,12 +81,13 @@ body {
 .header {
   flex: 0 1 auto;
   background-color: #212121;
-  height: 120px;
+  height: 100px;
   width: 100%;
 }
 
 .logo-container {
   height: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -90,26 +98,33 @@ body {
 .logo-item {
   align-self: center;
   padding: 10px;
-  background: linear-gradient(to right, rgb(122, 67, 205), rgb(69, 144, 214));
+  background: linear-gradient(to right, rgb(69, 144, 214), rgb(122, 67, 205));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
   font-weight: bold;
   cursor: pointer;
+  font-family: "Bungee", cursive;
 }
 
 #content-text {
   /* make a text color gradient */
-  font-size: 1.2rem;
-  color: white;
-
   position: absolute;
 
+  font-family: "Ubuntu", sans-serif;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#text-upper {
+  font-size: 3rem;
+  color: white;
+}
+#text-lower {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.593);
 }
 
 #loading,
@@ -145,7 +160,7 @@ body {
 
   width: 100%;
 
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -155,16 +170,16 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #weather-forecast div {
   padding: 15px;
-  margin: 10px;
   background-color: rgba(0, 0, 0, 0.388);
   border-radius: 5px;
   border: 3px solid white;
   min-width: 280px;
-  min-height: 280px;
+  min-height: 250px;
   width: fit-content;
   flex-basis: 10px;
 }
@@ -174,7 +189,6 @@ body {
   overflow: hidden;
   background-color: black;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .footer {
   flex: 0 1 40px;
@@ -189,30 +203,33 @@ body {
 }
 
 #weather-today div {
-  padding: 10px;
-  margin: 1% 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 3%;
+  margin-top: 0%;
 }
 
 #temp-today-day {
-  font-size: 6rem;
-  float: left;
-  text-align: left;
-  min-width: 300px;
+  font-size: 6.1rem;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #temp-today-night {
-  font-size: 5rem;
-  float: left;
-  text-align: left;
+  font-size: 4rem;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #city-name {
-  font-size: 5rem;
+  font-size: 5.1rem;
+  padding-bottom: 10px;
   float: right;
+  /* font-family: "Yeseva One", cursive; */
+  font-family: "Staatliches", cursive;
 }
 #today-weekday {
-  font-size: 3rem;
+  font-size: 2.5rem;
   float: right;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .temp-day {
@@ -222,7 +239,7 @@ body {
   font-size: 3rem;
 }
 .temp-detail {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 .temp-weekday {
   font-size: 2rem;
@@ -235,16 +252,18 @@ body {
   justify-content: left;
 }
 #weather-current div {
-  min-width: 200px;
+  min-width: 230px;
 }
 
 #today-detail {
   float: right;
-  font-size: 2rem;
+  font-size: 2.2rem;
   float: left;
   text-align: left;
   border-left: solid 3px white;
-  padding-left: 20px;
+  padding-left: 30px;
+  font-family: "Ubuntu", sans-serif;
+  min-width: 250px;
 }
 
 #bg {
