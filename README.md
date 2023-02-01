@@ -24,7 +24,7 @@ _The Start Page_
 ---
 
 ![Alt text](img/weather1.JPG?raw=true "Weather Page")
-_Weather Page Utrecht, Netherlands_
+_Weather Page Sydney, Australia_
 
 ---
 
@@ -34,7 +34,7 @@ _Weather Page Utrecht, Netherlands_
 ---
 
 ![Alt text](img/weather3.JPG?raw=true "Weather Page")
-_Weather Page Valencia, Spain _
+_Weather Page Valencia, Spain_
 
 ---
 
