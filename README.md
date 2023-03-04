@@ -1,6 +1,6 @@
 # Weather App
 
-Frontend / backend application to view the weather forecast for any location.
+Frontend / backend application to view the weather forecast for any location. To view click [HERE](https://weather-app-7pfe.onrender.com/) (Render hosting service - app goes to sleep while inactive).
 
 - SPA served by webserver on [NodeJS](https://nodejs.org/en/).
 
