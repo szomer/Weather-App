@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 html,
 body {
@@ -61,7 +61,7 @@ body {
   transition: 0.4s;
   line-height: 40px;
   width: 0px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -102,28 +102,28 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
 }
 
 #content-text {
   /* make a text color gradient */
   position: absolute;
 
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 #text-upper {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
 }
 #text-lower {
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.593);
 }
 
@@ -135,12 +135,13 @@ body {
   width: 35%;
   height: 35%;
   border-radius: 10px;
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  font-family: 'Ubuntu', sans-serif;
 
   position: absolute;
 
@@ -150,19 +151,14 @@ body {
 }
 
 #content-weather {
-  /* make a text color gradient */
-
   visibility: hidden;
-
-  font-size: 1.2rem;
+  top: 0;
+  font-size: 1rem;
   color: white;
   position: absolute;
 
   width: 100%;
-
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 100px;
 }
 #weather-forecast {
   width: 100%;
@@ -170,25 +166,29 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #weather-forecast div {
-  padding: 15px;
+  padding: 30px 10px 10px 10px;
+  margin: 5px;
   background-color: rgba(0, 0, 0, 0.388);
   border-radius: 5px;
   border: 3px solid white;
-  min-width: 280px;
-  min-height: 250px;
+  min-width: 240px;
+  min-height: 200px;
   width: fit-content;
   flex-basis: 10px;
 }
 
 .content-container {
   flex: 1 1 auto;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: black;
   text-align: center;
+  position: relative;
+  height: 100%;
+  border: 1px solid green;
 }
 .footer {
   flex: 0 1 40px;
@@ -210,36 +210,36 @@ body {
 }
 
 #temp-today-day {
-  font-size: 6.1rem;
-  font-family: "Ubuntu", sans-serif;
+  font-size: 5rem;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #temp-today-night {
-  font-size: 4rem;
-  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #city-name {
-  font-size: 5.1rem;
-  padding-bottom: 10px;
+  font-size: 5rem;
+  padding-bottom: 5px;
   float: right;
   /* font-family: "Yeseva One", cursive; */
-  font-family: "Staatliches", cursive;
+  font-family: 'Staatliches', cursive;
 }
 #today-weekday {
-  font-size: 2.5rem;
+  font-size: 2rem;
   float: right;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .temp-day {
-  font-size: 4rem;
-}
-.temp-night {
   font-size: 3rem;
 }
+.temp-night {
+  font-size: 2rem;
+}
 .temp-detail {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
 }
 .temp-weekday {
   font-size: 2rem;
@@ -262,16 +262,18 @@ body {
   text-align: left;
   border-left: solid 3px white;
   padding-left: 30px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   min-width: 250px;
 }
 
 #bg {
   height: 100%;
-  background-image: url("/assets/images/bg.jpg");
+  width: 100%;
+  background-image: url('/assets/images/bg.jpg');
   opacity: 0.6;
   background-position: center;
   background-repeat: no-repeat;
+  position: fixed;
   background-size: cover;
   object-fit: cover;
   filter: blur(5px);
